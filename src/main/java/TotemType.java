@@ -1,0 +1,10 @@
+public enum TotemType {
+    TOTEM_OF_ATEM,
+    TOTEM_OF_HORUS,
+    TOTEM_OF_RA,
+    TOTEM_OF_ANUBIS,
+    TOTEM_OF_GEB,
+    TOTEM_OF_ISIS,
+    TOTEM_OF_OSIRIS,
+    NEUTRAL
+}
