@@ -1,10 +1,24 @@
 public class Tile {
     private int x;
     private int y;
-    private String tileType;
+    private TileType tileType;
     private boolean dug;
     private int diggingLevel;
     private Part part;
+    private Trap trap;
+
+    public Trap getTrap() {
+        return trap;
+    }
+
+    public void setTrap(Trap trap) {
+        this.trap = trap;
+    }
+
+    public Tile() {
+        x = -1;
+        y = -1;
+    }
 
     public Part getPart() {
         return part;
@@ -30,11 +44,11 @@ public class Tile {
         this.y = y;
     }
 
-    public String getTileType() {
+    public TileType getTileType() {
         return tileType;
     }
 
-    public void setTileType(String tileType) {
+    public void setTileType(TileType tileType) {
         this.tileType = tileType;
     }
 
@@ -52,5 +66,17 @@ public class Tile {
 
     public void setDiggingLevel(int diggingLevel) {
         this.diggingLevel = diggingLevel;
+    }
+
+    @Override
+    public String toString() {
+        return "Tile{" +
+                "x=" + x +
+                ", y=" + y +
+                ", tileType=" + tileType +
+                ", dug=" + dug +
+                ", diggingLevel=" + diggingLevel +
+                ", part=" + part +
+                '}';
     }
 }

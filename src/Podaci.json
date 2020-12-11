@@ -1,3200 +1,2025 @@
 {
-   "success":true,
-   "result":{
-      "winner":null,
-      "id":1,
-      "nextPlayer":0,
-      "map":{
-         "height":20,
-         "width":25,
-         "tiles":[
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":{
-                     "value":5,
-                     "itemType":"WOOD_SHOP",
-                     "x":5,
-                     "y":8,
-                     "empty":false
-                  },
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":true
-               },
-               {
-                  "item":{
-                     "value":6,
-                     "itemType":"METAL_SHOP",
-                     "x":5,
-                     "y":9,
-                     "empty":false
-                  },
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":true
-               },
-               {
-                  "item":{
-                     "value":6,
-                     "itemType":"STONE_SHOP",
-                     "x":5,
-                     "y":10,
-                     "empty":false
-                  },
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":true
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":{
-                     "id":1,
-                     "x":8,
-                     "y":7,
-                     "health":60,
-                     "timeSinceBuilding":6,
-                     "numWeapons":2,
-                     "timeSinceMakeWeapon":9,
-                     "itemType":"ARROW_FORTRESS",
-                     "stringType":"ArrowFortress"
-                  },
-                  "buildingInProcess":false,
-                  "entity":true,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":{
-                     "value":10,
-                     "itemType":"STONE_SHOP",
-                     "x":14,
-                     "y":14,
-                     "empty":false
-                  },
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":true
-               },
-               {
-                  "item":{
-                     "value":10,
-                     "itemType":"METAL_SHOP",
-                     "x":14,
-                     "y":15,
-                     "empty":false
-                  },
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":true
-               },
-               {
-                  "item":{
-                     "value":10,
-                     "itemType":"WOOD_SHOP",
-                     "x":14,
-                     "y":16,
-                     "empty":false
-                  },
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":true
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ],
-            [
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               },
-               {
-                  "item":null,
-                  "buildingInProcess":false,
-                  "entity":false,
-                  "shop":false
-               }
-            ]
+   "id":1,
+   "map":{
+      "width":25,
+      "height":25,
+      "tiles":[
+         [
+            {
+               "x":0,
+               "y":0,
+               "tileType":"NORMALTILE",
+               "trap":null,
+               "part":null
+            },
+            {
+               "x":1,
+               "y":0,
+               "tileType":"NORMALTILE",
+               "trap":{
+                  "visible":false
+               },
+               "part":null
+            },
+            {
+               "x":2,
+               "y":0,
+               "tileType":"NORMALTILE",
+               "trap":{
+                  "visible":false
+               },
+               "part":null
+            },
+            {
+               "x":3,
+               "y":0,
+               "tileType":"NORMALTILE",
+               "trap":{
+                  "visible":false
+               },
+               "part":null
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+               "x":0,
+               "y":1,
+               "tileType":"NORMALTILE",
+               "trap":{
+                  "visible":false
+               },
+               "part":null
+            },
+            {
+               "x":1,
+               "y":1,
+               "tileType":"NORMALTILE",
+               "trap":{
+                  "visible":false
+               },
+               "part":null
+            },
+            {
+               "x":2,
+               "y":1,
+               "tileType":"NORMALTILE",
+               "trap":{
+                  "visible":false
+               },
+               "part":null
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+               "x":0,
+               "y":2,
+               "tileType":"NORMALTILE",
+               "trap":{
+                  "visible":false
+               },
+               "part":null
+            },
+            {
+               "x":1,
+               "y":2,
+               "tileType":"NORMALTILE",
+               "trap":{
+                  "visible":false
+               },
+               "part":null
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+               "x":0,
+               "y":3,
+               "tileType":"NORMALTILE",
+               "trap":{
+                  "visible":false
+               },
+               "part":null
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+         ],
+         [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
          ]
-      },
-      "player1":{
-         "id":1,
-         "x":8,
-         "y":6,
-         "health":90,
-         "initX":9,
-         "initY":6,
-         "lives":5,
-         "kills":0,
-         "score":30,
-         "weapon1":null,
-         "weapon2":null,
-         "stupidMoves":4,
-         "resources":{
-            "STONE":0,
-            "WOOD":0,
-            "METAL":0
-         },
-         "notFinishedBuildings":[
-
-         ],
-         "buildings":[
-            {
-               "id":1,
-               "x":8,
-               "y":7,
-               "health":60,
-               "timeSinceBuilding":6,
-               "numWeapons":2,
-               "timeSinceMakeWeapon":9,
-               "itemType":"ARROW_FORTRESS",
-               "stringType":"ArrowFortress"
-            }
-         ],
-         "stringType":"Player"
-      },
-      "player2":{
-         "id":2,
-         "x":15,
-         "y":6,
-         "health":70,
-         "initX":19,
-         "initY":6,
-         "lives":5,
-         "kills":0,
-         "score":0,
-         "weapon1":null,
-         "weapon2":null,
-         "stupidMoves":9,
-         "resources":{
-            "STONE":0,
-            "WOOD":0,
-            "METAL":0
-         },
-         "notFinishedBuildings":[
-
-         ],
-         "buildings":[
-
-         ],
-         "stringType":"Player"
-      },
-      "turn":3878,
-      "nextPlayerObject":{
-         "id":1,
-         "x":8,
-         "y":6,
-         "health":90,
-         "initX":9,
-         "initY":6,
-         "lives":5,
-         "kills":0,
-         "score":30,
-         "weapon1":null,
-         "weapon2":null,
-         "stupidMoves":4,
-         "resources":{
-            "STONE":10,
-            "WOOD":9,
-            "METAL":1
-         },
-         "notFinishedBuildings":[
-
-         ],
-         "buildings":[
-            {
-               "id":1,
-               "x":8,
-               "y":7,
-               "health":60,
-               "timeSinceBuilding":6,
-               "numWeapons":2,
-               "timeSinceMakeWeapon":9,
-               "itemType":"ARROW_FORTRESS",
-               "stringType":"ArrowFortress"
-            }
-         ],
-         "stringType":"Player"
-      }
+      ]
    },
-   "playerIndex":1
+   "winner":null,
+   "turn":2800,
+   "nextPlayer":0,
+   "nextPlayerObject":{
+      "id":1,
+      "x":0,
+      "y":0,
+      "initX":0,
+      "initY":0,
+      "health":200,
+      "money":0.0,
+      "illegalMoves":10,
+      "numOfPotions":0,
+      "scorpionPoison":false,
+      "trappedInQuickSand":false,
+      "durationScorpionPoison":0,
+      "durationQuickSand":0,
+      "diggingTime":3,
+      "parts":[
+
+      ],
+      "numOfTraps":0,
+      "paralysed":false,
+      "trapsRevealed":false,
+      "eyesight":3,
+      "burning":false
+   },
+   "otherPlayerObject":{
+
+   },
+   "tradeCenter":{
+
+   }
 }

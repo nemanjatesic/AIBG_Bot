@@ -7,7 +7,7 @@ public class Player {
     private int initX;
     private int initY;
     private int health;
-    private int money;
+    private float money;
     private int illegalMoves;
     private int numOfPotions;
     private boolean scorpionPoison;
@@ -70,11 +70,11 @@ public class Player {
         this.health = health;
     }
 
-    public int getMoney() {
+    public float getMoney() {
         return money;
     }
 
-    public void setMoney(int money) {
+    public void setMoney(float money) {
         this.money = money;
     }
 
@@ -180,5 +180,31 @@ public class Player {
 
     public void setBurning(boolean burning) {
         this.burning = burning;
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "id=" + id +
+                ", x=" + x +
+                ", y=" + y +
+                ", initX=" + initX +
+                ", initY=" + initY +
+                ", health=" + health +
+                ", money=" + money +
+                ", illegalMoves=" + illegalMoves +
+                ", numOfPotions=" + numOfPotions +
+                ", scorpionPoison=" + scorpionPoison +
+                ", trappedInQuickSand=" + trappedInQuickSand +
+                ", durationScorpionPoison=" + durationScorpionPoison +
+                ", durationQuickSand=" + durationQuickSand +
+                ", diggingTime=" + diggingTime +
+                ", parts=" + parts +
+                ", numOfTraps=" + numOfTraps +
+                ", paralysed=" + paralysed +
+                ", trapsRevealed=" + trapsRevealed +
+                ", eyesight=" + eyesight +
+                ", burning=" + burning +
+                '}';
     }
 }

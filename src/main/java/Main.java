@@ -6,13 +6,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        String JSON = loadJSONFromFile("src\\Tmp.json");
+//        String JSON = loadJSONFromFile("src" + File.separator +"Podaci.json");
 
         GsonBuilder gsonBuilder = new GsonBuilder();
         gsonBuilder.enableComplexMapKeySerialization();
         Gson gson = gsonBuilder.create();
 
-        System.out.println(gson.fromJson(JSON, Part.class));
+        String connect = MyHttp.sendConnect(Constants.PLAYER_ID, Constants.GAME_ID);
+        Game game = gson.fromJson(connect, Game.class);
+        game.play(gson);
     }
 
     private static String loadJSONFromFile(String path) throws Exception{

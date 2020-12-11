@@ -15,7 +15,7 @@ public class MyHttp {
             .build();
 
     public static String sendConnect(int playerId, int gameId) throws Exception {
-        String string = "http://localhost:9080//game/play?playerId=" + playerId;
+        String string = "http://localhost:9080/game/play?playerId=" + playerId;
         string += "&gameId=" + gameId;
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
