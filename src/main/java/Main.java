@@ -14,7 +14,7 @@ public class Main {
 
         String connect = MyHttp.sendConnect(Constants.PLAYER_ID, Constants.GAME_ID);
         Game game = gson.fromJson(connect, Game.class);
-        game.play(gson);
+        game.init(gson);
     }
 
     private static String loadJSONFromFile(String path) throws Exception{

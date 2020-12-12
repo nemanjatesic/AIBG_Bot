@@ -22,6 +22,10 @@ public class Player {
     private int eyesight;
     private boolean burning;
 
+    public Player() {
+        id = -1;
+    }
+
     public int getId() {
         return id;
     }
