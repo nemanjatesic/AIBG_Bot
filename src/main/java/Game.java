@@ -14,7 +14,7 @@ public class Game {
     private Player nextPlayerObject;
     private Player otherPlayerObject;
     private TradeCenter tradeCenter;
-    private GameState gameState;
+//    private GameState gameState;
     private char direction;
     private char nextDirection;
     private int movesBeforeChange;
@@ -24,13 +24,11 @@ public class Game {
     private boolean flagGoShop;
     private boolean flagActuallyGoing;
 
-    public void play(Gson gson)
-    {
+    public void play(Gson gson) {
         try {
             String response;
             int counter = 0;
-            while (true)
-            {
+            while (true) {
                 printMatrix();
 //            if (gameState == GameState.SEARCHING)
 //            {
@@ -42,8 +40,7 @@ public class Game {
 //                response = MyHttp.sendAction(Constants.PLAYER_ID, Constants.GAME_ID, "d");
 //            counter++;
                 String searchStr = magic();
-                if (searchStr.equals("-2"))
-                {
+                if (searchStr.equals("-2")) {
                     sellTotems(gson);
                     flagDig = false;
                     flagGoShop = false;
@@ -55,20 +52,19 @@ public class Game {
                 Game game = gson.fromJson(response, Game.class);
                 updateGame(game);
             }
-        }catch (Exception e) {
+        } catch (Exception e) {
             Random random = new Random();
             int ran = random.nextInt(4);
             String[] move = {"w", "a", "s", "d"};
             try {
                 MyHttp.sendAction(Constants.PLAYER_ID, Constants.GAME_ID, move[ran]);
-            }catch (Exception ignored) {
+            } catch (Exception ignored) {
             }
             play(gson);
         }
     }
 
-    private void sellTotems(Gson gson) throws Exception
-    {
+    private void sellTotems(Gson gson) throws Exception {
         String response = "";
         for (String s : sellActions()) {
             response = MyHttp.sendAction(Constants.PLAYER_ID, Constants.GAME_ID, s);
@@ -77,14 +73,13 @@ public class Game {
         }
     }
 
-    private List<String> sellActions()
-    {
+    private List<String> sellActions() {
         List<String> list = new ArrayList<>();
         HashMap<TotemType, Integer> hashMap = new HashMap<>();
         for (TotemType tt : TotemType.values()) {
             int count = 0;
             for (Part part : nextPlayerObject.getParts()) {
-                if(part.getTotemType() == tt) {
+                if (part.getTotemType() == tt) {
                     count++;
                 }
             }
@@ -92,59 +87,45 @@ public class Game {
         }
         int diff = 0;
         for (TotemType tt : hashMap.keySet()) {
-             if (hashMap.get(tt) > 0)
-             {
-                 diff++;
-             }
+            if (hashMap.get(tt) > 0) {
+                diff++;
+            }
         }
-        if (diff == 2 && hashMap.get(TotemType.NEUTRAL) == 1)
-        {
+        if (diff == 2 && hashMap.get(TotemType.NEUTRAL) == 1) {
             list.add("sellTotem");
             return list;
         }
         HashMap<TotemType, Integer> hashMapCombined = new HashMap<>();
-        for (TotemType tt : TotemType.values())
-        {
+        for (TotemType tt : TotemType.values()) {
             hashMapCombined.put(tt, 0);
         }
-        for (Part pPlayer : nextPlayerObject.getParts())
-        {
+        for (Part pPlayer : nextPlayerObject.getParts()) {
             hashMapCombined.put(pPlayer.getTotemType(), hashMapCombined.get(pPlayer.getTotemType()) + 1);
         }
-        for (Part pShop : tradeCenter.getPartsTC())
-        {
+        for (Part pShop : tradeCenter.getPartsTC()) {
             hashMapCombined.put(pShop.getTotemType(), hashMapCombined.get(pShop.getTotemType()) + 1);
         }
 
         TotemType savedType = null;
-        for (TotemType totemType : TotemType.values())
-        {
-            if (hashMapCombined.get(totemType) == 2 && totemType != TotemType.NEUTRAL)
-            {
+        for (TotemType totemType : TotemType.values()) {
+            if (hashMapCombined.get(totemType) == 2 && totemType != TotemType.NEUTRAL) {
                 savedType = totemType;
                 break;
             }
         }
 
-        if (hashMapCombined.get(TotemType.NEUTRAL) == 0 || savedType == null)
-        {
-            for (Part pPlayer : nextPlayerObject.getParts())
-            {
+        if (hashMapCombined.get(TotemType.NEUTRAL) == 0 || savedType == null) {
+            for (Part pPlayer : nextPlayerObject.getParts()) {
                 list.add("sellPart-" + pPlayer.getId());
             }
             return list;
         }
-        if (hashMap.get(TotemType.NEUTRAL) == 0)
-        {
-            for (Part pPlayer : nextPlayerObject.getParts())
-            {
-                if (pPlayer.getTotemType() != savedType && pPlayer.getTotemType() != TotemType.NEUTRAL)
-                {
+        if (hashMap.get(TotemType.NEUTRAL) == 0) {
+            for (Part pPlayer : nextPlayerObject.getParts()) {
+                if (pPlayer.getTotemType() != savedType && pPlayer.getTotemType() != TotemType.NEUTRAL) {
                     String s = "trade-" + pPlayer.getId() + "-";
-                    for (Part p : tradeCenter.getPartsTC())
-                    {
-                        if (p.getTotemType() == TotemType.NEUTRAL)
-                        {
+                    for (Part p : tradeCenter.getPartsTC()) {
+                        if (p.getTotemType() == TotemType.NEUTRAL) {
                             s += p.getId();
                             list.add(s);
                             break;
@@ -153,19 +134,14 @@ public class Game {
                 }
             }
         }
-        for (Part pPlayer : nextPlayerObject.getParts())
-        {
-            if (pPlayer.getTotemType() != savedType && (pPlayer.getTotemType() != TotemType.NEUTRAL || hashMap.get(TotemType.NEUTRAL) > 1))
-            {
-                if (pPlayer.getTotemType() == TotemType.NEUTRAL)
-                {
+        for (Part pPlayer : nextPlayerObject.getParts()) {
+            if (pPlayer.getTotemType() != savedType && (pPlayer.getTotemType() != TotemType.NEUTRAL || hashMap.get(TotemType.NEUTRAL) > 1)) {
+                if (pPlayer.getTotemType() == TotemType.NEUTRAL) {
                     hashMap.put(TotemType.NEUTRAL, hashMap.get(TotemType.NEUTRAL) - 1);
                 }
                 String s = "trade-" + pPlayer.getId() + "-";
-                for (Part p : tradeCenter.getPartsTC())
-                {
-                    if (p.getTotemType() == savedType)
-                    {
+                for (Part p : tradeCenter.getPartsTC()) {
+                    if (p.getTotemType() == savedType) {
                         s += p.getId();
                         list.add(s);
                         break;
@@ -176,14 +152,10 @@ public class Game {
         return list;
     }
 
-    private boolean searchDig()
-    {
-        for (int i = 0; i < 25; i++)
-        {
-            for (int j = 0 ; j < 25; j++)
-            {
-                if (map.getTilesMap()[i][j] != null && map.getTilesMap()[i][j].getTileType() == TileType.DIGTILE && !visDig[i][j])
-                {
+    private boolean searchDig() {
+        for (int i = 0; i < 25; i++) {
+            for (int j = 0; j < 25; j++) {
+                if (map.getTilesMap()[i][j] != null && map.getTilesMap()[i][j].getTileType() == TileType.DIGTILE && !visDig[i][j]) {
                     return true;
                 }
             }
@@ -191,40 +163,32 @@ public class Game {
         return false;
     }
 
-    private void goDig()
-    {
+    private void goDig() {
         Queue<Pair> q = new LinkedList<>();
         int korI = nextPlayerObject.getY(), korJ = nextPlayerObject.getX();
-        int movI[] = {0,0,1,-1};
-        int movJ[] = {1,-1,0,0};
+        int movI[] = {0, 0, 1, -1};
+        int movJ[] = {1, -1, 0, 0};
         int dis[][] = new int[25][25];
         Pair movesMat[][] = new Pair[25][25];
         int saveI = -1, saveJ = -1;
-        for (int i = 0; i < 25; i++)
-        {
-            for (int j = 0; j < 25; j++)
-            {
+        for (int i = 0; i < 25; i++) {
+            for (int j = 0; j < 25; j++) {
                 dis[i][j] = -1;
             }
         }
         dis[korI][korJ] = 0;
         movesMat[korI][korJ] = new Pair(-1, -1);
-        if (otherPlayerObject != null && otherPlayerObject.getId() != -1)
-        {
+        if (otherPlayerObject != null && otherPlayerObject.getId() != -1) {
             dis[otherPlayerObject.getY()][otherPlayerObject.getX()] = 2000;
         }
         q.add(new Pair(korI, korJ));
-        while (!q.isEmpty())
-        {
+        while (!q.isEmpty()) {
             int i = q.peek().first, j = q.peek().second;
             q.poll();
-            for (int rr = 0; rr < 4; rr++)
-            {
+            for (int rr = 0; rr < 4; rr++) {
                 int ii = i + movI[rr], jj = j + movJ[rr];
-                if (ii >= 0 && ii < 25  && jj >= 0 && jj < 25 && dis[ii][jj] == -1 && map.getTilesMap()[ii][jj] != null)
-                {
-                    if(map.getTilesMap()[ii][jj].getTileType() == TileType.DIGTILE && !visDig[ii][jj])
-                    {
+                if (ii >= 0 && ii < 25 && jj >= 0 && jj < 25 && dis[ii][jj] == -1 && map.getTilesMap()[ii][jj] != null) {
+                    if (map.getTilesMap()[ii][jj].getTileType() == TileType.DIGTILE && !visDig[ii][jj]) {
                         movesMat[ii][jj] = new Pair(i, j);
                         dis[ii][jj] = dis[i][j] + 1;
                         saveI = ii;
@@ -232,235 +196,210 @@ public class Game {
                         q.clear();
                         break;
                     }
-                    if(map.getTilesMap()[ii][jj].getTileType() != TileType.BLOCKTILE && !isTrap(ii, jj))
-                    {
+                    if (map.getTilesMap()[ii][jj].getTileType() != TileType.BLOCKTILE && !isTrap(ii, jj)) {
                         movesMat[ii][jj] = new Pair(i, j);
                         dis[ii][jj] = dis[i][j] + 1;
-                        q.add(new Pair(ii,jj));
+                        q.add(new Pair(ii, jj));
                     }
                 }
             }
         }
         //TODO optimize for traps
         int backI = saveI, backJ = saveJ;
-        while (backI != -1 && backJ != -1)
-        {
+        while (backI != -1 && backJ != -1) {
             movesSequence.add(new Pair(backI, backJ));
             int tmpI = backI, tmpJ = backJ;
             backI = movesMat[tmpI][tmpJ].first;
             backJ = movesMat[tmpI][tmpJ].second;
         }
         Collections.reverse(movesSequence);
-        if (!movesSequence.isEmpty())
-        {
+        if (!movesSequence.isEmpty()) {
             movesSequence.remove(0);
         }
-        if (!movesSequence.isEmpty())
-        {
-            for (int i = 0; i < nextPlayerObject.getDiggingTime(); i++)
-            {
-                movesSequence.add(new Pair(-2,-2));
+        if (!movesSequence.isEmpty()) {
+            for (int i = 0; i < nextPlayerObject.getDiggingTime(); i++) {
+                movesSequence.add(new Pair(-2, -2));
             }
-            movesSequence.add(new Pair(-3,-3));
+            movesSequence.add(new Pair(-3, -3));
         }
         return;
     }
 
-    private boolean goShop()
-    {
+    private boolean goShop() {
         Queue<Pair> q = new LinkedList<>();
         int korI = nextPlayerObject.getY(), korJ = nextPlayerObject.getX();
-        int movI[] = {0,0,1,-1};
-        int movJ[] = {1,-1,0,0};
+        int movI[] = {0, 0, 1, -1};
+        int movJ[] = {1, -1, 0, 0};
         int dis[][] = new int[25][25];
         Pair movesMat[][] = new Pair[25][25];
         int saveI = -1, saveJ = -1;
-        for (int i = 0; i < 25; i++)
-        {
-            for (int j = 0; j < 25; j++)
-            {
+        for (int i = 0; i < 25; i++) {
+            for (int j = 0; j < 25; j++) {
                 dis[i][j] = -1;
             }
         }
         dis[korI][korJ] = 0;
         movesMat[korI][korJ] = new Pair(-1, -1);
-        if (otherPlayerObject != null && otherPlayerObject.getId() != -1)
-        {
+        if (otherPlayerObject != null && otherPlayerObject.getId() != -1) {
             dis[otherPlayerObject.getY()][otherPlayerObject.getX()] = 2000;
         }
         q.add(new Pair(korI, korJ));
-        while (!q.isEmpty())
-        {
+        while (!q.isEmpty()) {
             int i = q.peek().first, j = q.peek().second;
             q.poll();
-            for (int rr = 0; rr < 4; rr++)
-            {
+            for (int rr = 0; rr < 4; rr++) {
                 int ii = i + movI[rr], jj = j + movJ[rr];
-                if (ii >= 0 && ii < 25  && jj >= 0 && jj < 25 && dis[ii][jj] == -1 && map.getTilesMap()[ii][jj] != null)
-                {
-                    if(map.getTilesMap()[ii][jj].getTileType() != TileType.BLOCKTILE && ii>9 && ii<15 && jj>9 && jj<15)
-                    {
+                if (ii >= 0 && ii < 25 && jj >= 0 && jj < 25 && dis[ii][jj] == -1 && map.getTilesMap()[ii][jj] != null) {
+                    if (map.getTilesMap()[ii][jj].getTileType() != TileType.BLOCKTILE && ii > 9 && ii < 15 && jj > 9 && jj < 15) {
                         movesMat[ii][jj] = new Pair(i, j);
                         dis[ii][jj] = dis[i][j] + 1;
                         saveI = ii;
                         saveJ = jj;
                         q.clear();
                         break;
-                    }
-                    else if(map.getTilesMap()[ii][jj].getTileType() != TileType.BLOCKTILE && !isTrap(ii, jj))
-                    {
+                    } else if (map.getTilesMap()[ii][jj].getTileType() != TileType.BLOCKTILE && !isTrap(ii, jj)) {
                         movesMat[ii][jj] = new Pair(i, j);
                         dis[ii][jj] = dis[i][j] + 1;
-                        q.add(new Pair(ii,jj));
+                        q.add(new Pair(ii, jj));
                     }
                 }
             }
         }
         //TODO optimize for traps
         int backI = saveI, backJ = saveJ;
-        if (saveI == -1 && saveJ == -1)
-        {
+        if (saveI == -1 && saveJ == -1) {
             return false;
         }
-        while (backI != -1 && backJ != -1)
-        {
+        while (backI != -1 && backJ != -1) {
             movesSequence.add(new Pair(backI, backJ));
             int tmpI = backI, tmpJ = backJ;
             backI = movesMat[tmpI][tmpJ].first;
             backJ = movesMat[tmpI][tmpJ].second;
         }
         Collections.reverse(movesSequence);
-        if (!movesSequence.isEmpty())
-        {
+        if (!movesSequence.isEmpty()) {
             movesSequence.remove(0);
         }
         return true;
     }
 
-    private String magic()
-    {
+    private String magic() {
         String res = "-1";
         Queue<Pair> q = new LinkedList<>();
         int korI = nextPlayerObject.getY(), korJ = nextPlayerObject.getX();
-        if (korI > 9 && korI < 15 && korJ > 9 && korJ < 15 && nextPlayerObject.getParts().size() == 3)
-        {
+        if (nextPlayerObject.isTrappedInQuickSand()) {
+            return "-8";
+        }
+        if (korI > 9 && korI < 15 && korJ > 9 && korJ < 15 && nextPlayerObject.getParts().size() == 3) {
             return "-2";
         }
-        if (flagGoShop && !flagActuallyGoing)
-        {
+
+        int digCount = 0;
+        for (int i = 0; i < 25; i++) {
+            for (int j = 0; j < 25; j++) {
+                if (visDig[i][j]) {
+                    digCount++;
+                }
+            }
+        }
+
+        if (digCount == 21) {
+            for (int i = 0; i < 25; i++) {
+                for (int j = 0; j < 25; j++) {
+                    visDig[i][j] = false;
+                }
+            }
+        }
+
+        if (this.getMap().getTilesMap()[korI][korJ].getTileType() == TileType.DIGTILE && this.getMap().getTilesMap()[korI][korJ].isDug()) {
+            visDig[korI][korJ] = true;
+        }
+
+        if (flagGoShop && !flagActuallyGoing) {
             boolean tmp = goShop();
-            if (tmp)
-            {
+            if (tmp) {
                 flagActuallyGoing = true;
             }
         }
-        if(!flagGoShop && !flagDig && searchDig())
-        {
+        if (!flagGoShop && !flagDig && searchDig()) {
             flagDig = true;
             movesSequence.clear();
             goDig();
         }
-        if (!movesSequence.isEmpty())
-        {
+        if (!movesSequence.isEmpty()) {
             boolean flagReset = false;
-            if(movesSequence.get(0).first == korI && movesSequence.get(0).second == korJ + 1)
-            {
-                if (otherPlayerObject != null && otherPlayerObject.getId() != -1 && otherPlayerObject.getX() == korJ + 1 && otherPlayerObject.getY() == korI)
-                {
+            if (movesSequence.get(0).first == korI && movesSequence.get(0).second == korJ + 1) {
+                if (otherPlayerObject != null && otherPlayerObject.getId() != -1 && otherPlayerObject.getX() == korJ + 1 && otherPlayerObject.getY() == korI) {
                     flagReset = true;
                 }
                 res = "d";
-            }
-            else if(movesSequence.get(0).first == korI + 1 && movesSequence.get(0).second == korJ)
-            {
-                if (otherPlayerObject != null && otherPlayerObject.getId() != -1 && otherPlayerObject.getX() == korJ && otherPlayerObject.getY() == korI + 1)
-                {
+            } else if (movesSequence.get(0).first == korI + 1 && movesSequence.get(0).second == korJ) {
+                if (otherPlayerObject != null && otherPlayerObject.getId() != -1 && otherPlayerObject.getX() == korJ && otherPlayerObject.getY() == korI + 1) {
                     flagReset = true;
                 }
                 res = "s";
-            }
-            else if(movesSequence.get(0).first == korI && movesSequence.get(0).second == korJ - 1)
-            {
-                if (otherPlayerObject != null && otherPlayerObject.getId() != -1 && otherPlayerObject.getX() == korJ - 1 && otherPlayerObject.getY() == korI)
-                {
+            } else if (movesSequence.get(0).first == korI && movesSequence.get(0).second == korJ - 1) {
+                if (otherPlayerObject != null && otherPlayerObject.getId() != -1 && otherPlayerObject.getX() == korJ - 1 && otherPlayerObject.getY() == korI) {
                     flagReset = true;
                 }
                 res = "a";
-            }
-            else if(movesSequence.get(0).first == korI - 1 && movesSequence.get(0).second == korJ)
-            {
-                if (otherPlayerObject != null && otherPlayerObject.getId() != -1 && otherPlayerObject.getX() == korJ && otherPlayerObject.getY() == korI - 1)
-                {
+            } else if (movesSequence.get(0).first == korI - 1 && movesSequence.get(0).second == korJ) {
+                if (otherPlayerObject != null && otherPlayerObject.getId() != -1 && otherPlayerObject.getX() == korJ && otherPlayerObject.getY() == korI - 1) {
                     flagReset = true;
                 }
                 res = "w";
-            }
-            else if(movesSequence.get(0).first == -2 && movesSequence.get(0).second == -2)
-            {
-                if(map.getTilesMap()[korI][korJ].isDug())
-                {
+            } else if (movesSequence.get(0).first == -2 && movesSequence.get(0).second == -2) {
+                if (map.getTilesMap()[korI][korJ].isDug()) {
                     movesSequence.clear();
                     flagDig = false;
                     return magic();
                 }
                 res = "dig";
-            }
-            else if(movesSequence.get(0).first == -3 && movesSequence.get(0).second == -3)
-            {
+            } else if (movesSequence.get(0).first == -3 && movesSequence.get(0).second == -3) {
                 res = "collect";
                 if (this.getMap().getTilesMap()[korI][korJ].getTileType() == TileType.DIGTILE) {
                     visDig[korI][korJ] = true;
-                    if(nextPlayerObject.getParts().size() == 2)
-                    {
+                    if (nextPlayerObject.getParts().size() == 2) {
                         flagGoShop = true;
                     }
                 }
             }
-            if(flagReset)
-            {
+            if (flagReset) {
                 movesSequence.clear();
                 flagDig = false;
                 flagActuallyGoing = false;
                 return magic();
             }
             movesSequence.remove(0);
-            if(movesSequence.isEmpty())
-            {
+            if (movesSequence.isEmpty()) {
                 flagDig = false;
             }
             return res;
         }
         flagDig = false;
-        int movI[] = {0,0,1,-1};
-        int movJ[] = {1,-1,0,0};
+        int movI[] = {0, 0, 1, -1};
+        int movJ[] = {1, -1, 0, 0};
         int dis[][] = new int[25][25];
         Pair movesMat[][] = new Pair[25][25];
         int saveI = -1, saveJ = -1;
-        for (int i = 0; i < 25; i++)
-        {
-            for (int j = 0; j < 25; j++)
-            {
+        for (int i = 0; i < 25; i++) {
+            for (int j = 0; j < 25; j++) {
                 dis[i][j] = -1;
             }
         }
         dis[korI][korJ] = 0;
         movesMat[korI][korJ] = new Pair(-1, -1);
-        if (otherPlayerObject != null && otherPlayerObject.getId() != -1)
-        {
+        if (otherPlayerObject != null && otherPlayerObject.getId() != -1) {
             dis[otherPlayerObject.getY()][otherPlayerObject.getX()] = 2000;
         }
         q.add(new Pair(korI, korJ));
-        while (!q.isEmpty())
-        {
+        while (!q.isEmpty()) {
             int i = q.peek().first, j = q.peek().second;
             q.poll();
-            for (int rr = 0; rr < 4; rr++)
-            {
+            for (int rr = 0; rr < 4; rr++) {
                 int ii = i + movI[rr], jj = j + movJ[rr];
-                if (ii >= 0 && ii < 25  && jj >= 0 && jj < 25 && dis[ii][jj] == -1)
-                {
-                    if(map.getTilesMap()[ii][jj] == null)
-                    {
+                if (ii >= 0 && ii < 25 && jj >= 0 && jj < 25 && dis[ii][jj] == -1) {
+                    if (map.getTilesMap()[ii][jj] == null) {
                         movesMat[ii][jj] = new Pair(i, j);
                         dis[ii][jj] = dis[i][j] + 1;
                         saveI = ii;
@@ -468,45 +407,34 @@ public class Game {
                         q.clear();
                         break;
                     }
-                    if(map.getTilesMap()[ii][jj].getTileType() != TileType.BLOCKTILE && !isTrap(ii, jj))
-                    {
+                    if (map.getTilesMap()[ii][jj].getTileType() != TileType.BLOCKTILE && !isTrap(ii, jj)) {
                         movesMat[ii][jj] = new Pair(i, j);
                         dis[ii][jj] = dis[i][j] + 1;
-                        q.add(new Pair(ii,jj));
+                        q.add(new Pair(ii, jj));
                     }
                 }
             }
         }
         //TODO optimize for traps
         int backI = saveI, backJ = saveJ;
-        while (backI != -1 && backJ != -1)
-        {
+        while (backI != -1 && backJ != -1) {
             movesSequence.add(new Pair(backI, backJ));
             int tmpI = backI, tmpJ = backJ;
             backI = movesMat[tmpI][tmpJ].first;
             backJ = movesMat[tmpI][tmpJ].second;
         }
         Collections.reverse(movesSequence);
-        if (!movesSequence.isEmpty())
-        {
+        if (!movesSequence.isEmpty()) {
             movesSequence.remove(0);
         }
-        if (!movesSequence.isEmpty())
-        {
-            if(movesSequence.get(0).first == korI && movesSequence.get(0).second == korJ + 1)
-            {
+        if (!movesSequence.isEmpty()) {
+            if (movesSequence.get(0).first == korI && movesSequence.get(0).second == korJ + 1) {
                 res = "d";
-            }
-            else if(movesSequence.get(0).first == korI + 1 && movesSequence.get(0).second == korJ)
-            {
+            } else if (movesSequence.get(0).first == korI + 1 && movesSequence.get(0).second == korJ) {
                 res = "s";
-            }
-            else if(movesSequence.get(0).first == korI && movesSequence.get(0).second == korJ - 1)
-            {
+            } else if (movesSequence.get(0).first == korI && movesSequence.get(0).second == korJ - 1) {
                 res = "a";
-            }
-            else if(movesSequence.get(0).first == korI - 1 && movesSequence.get(0).second == korJ)
-            {
+            } else if (movesSequence.get(0).first == korI - 1 && movesSequence.get(0).second == korJ) {
                 res = "w";
             }
             movesSequence.remove(0);
@@ -515,18 +443,15 @@ public class Game {
         return res;
     }
 
-    private String handleThreePartsInBag()
-    {
+    private String handleThreePartsInBag() {
         return "";
     }
 
 
-    public void init(Gson gson) throws Exception
-    {
+    public void init(Gson gson) throws Exception {
         movesSequence = new ArrayList<>();
         visDig = new boolean[25][25];
-        for (int i = 0; i < 25; i++)
-        {
+        for (int i = 0; i < 25; i++) {
             for (int j = 0; j < 25; j++)
                 visDig[i][j] = false;
         }
@@ -538,13 +463,10 @@ public class Game {
             player = nextPlayerObject;
         else
             player = otherPlayerObject;
-        if (player.getInitX() == 0)
-        {
+        if (player.getInitX() == 0) {
             direction = 'd';
             nextDirection = 's';
-        }
-        else
-        {
+        } else {
             direction = 'a';
             nextDirection = 'w';
         }
@@ -552,18 +474,12 @@ public class Game {
         play(gson);
     }
 
-    private void printMatrix()
-    {
-        for (int i = 0; i < 25; i++)
-        {
-            for (int j = 0; j < 25; j++)
-            {
-                if (map.getTilesMap()[i][j] != null)
-                {
+    private void printMatrix() {
+        for (int i = 0; i < 25; i++) {
+            for (int j = 0; j < 25; j++) {
+                if (map.getTilesMap()[i][j] != null) {
                     System.out.print("x ");
-                }
-                else
-                {
+                } else {
                     System.out.print("o ");
                 }
             }
@@ -572,14 +488,13 @@ public class Game {
         System.out.println();
     }
 
-    private boolean isTrap(int i, int j)
-    {
+    private boolean isTrap(int i, int j) {
         return this.getMap().getTilesMap()[i][j].getTrap() != null && this.getMap().getTilesMap()[i][j].getTrap().getTrapType() != null;
     }
 
     private void printTraps() {
-        for (int i = 0 ; i < this.getMap().getHeight() ; i++) {
-            for (int j = 0 ; j < this.getMap().getWidth() ; j++) {
+        for (int i = 0; i < this.getMap().getHeight(); i++) {
+            for (int j = 0; j < this.getMap().getWidth(); j++) {
                 if (this.getMap().getTilesMap()[i][j] != null && this.getMap().getTilesMap()[i][j].getTrap() != null && this.getMap().getTilesMap()[i][j].getTrap().getTrapType() != null) {
                     System.out.print("x ");
                 } else {
@@ -592,8 +507,8 @@ public class Game {
     }
 
     private void updateGame(Game game) {
-        for (int i = 0 ; i < game.getMap().getHeight() ; i++) {
-            for (int j = 0 ; j < game.getMap().getWidth() ; j++) {
+        for (int i = 0; i < game.getMap().getHeight(); i++) {
+            for (int j = 0; j < game.getMap().getWidth(); j++) {
                 Tile currTile = this.getMap().getTilesMap()[i][j];
                 Tile newTile = game.getMap().getTilesMap()[i][j];
                 if (newTile == null) {
