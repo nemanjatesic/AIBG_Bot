@@ -17,7 +17,7 @@ public class Game {
     private Player nextPlayerObject;
     private Player otherPlayerObject;
     private TradeCenter tradeCenter;
-//    private GameState gameState;
+    //    private GameState gameState;
     private char direction;
     private char nextDirection;
     private int movesBeforeChange;
@@ -75,10 +75,8 @@ public class Game {
             updateGame(game);
         }
         List<String> list = checkIfBuyingMakesTotem();
-        while (!list.isEmpty())
-        {
-            for (String str : list)
-            {
+        while (!list.isEmpty()) {
+            for (String str : list) {
                 response = MyHttp.sendAction(Constants.PLAYER_ID, Constants.GAME_ID, str);
                 Game game = gson.fromJson(response, Game.class);
                 updateGame(game);
@@ -87,54 +85,60 @@ public class Game {
         }
     }
 
-    private List<String> checkIfBuyingMakesTotem()
-    {
+    private List<String> checkIfBuyingMakesTotem() {
         HashMap<TotemType, Integer> hashMap = new HashMap<>();
-        for (TotemType tt : TotemType.values())
-        {
+        for (TotemType tt : TotemType.values()) {
             hashMap.put(tt, 0);
         }
-        for (Part part : tradeCenter.getPartsTC())
-        {
+        for (Part part : tradeCenter.getPartsTC()) {
             hashMap.put(part.getTotemType(), hashMap.get(part.getTotemType()) + 1);
         }
         int max = 0;
         TotemType maxType = null;
         int neutralCount = 0;
-        for (TotemType tt : TotemType.values())
-        {
-            if (tt == TotemType.NEUTRAL)
-            {
+        for (TotemType tt : TotemType.values()) {
+            if (tt == TotemType.NEUTRAL) {
                 neutralCount++;
                 continue;
             }
-            if (hashMap.get(tt) > max)
-            {
+            if (hashMap.get(tt) > max) {
                 max = hashMap.get(tt);
                 maxType = tt;
             }
         }
         List<String> list = new ArrayList<>();
+        if (this.nextPlayerObject.getHealth() <= 25) {
+            if (this.nextPlayerObject.getMoney() >= 400) {
+                list.add("buy-potion");
+                list.add("usePotion");
+                return list;
+            }
+        }
         int countOfNeutral = 1;
-        if (neutralCount > 0 && max == 2 && nextPlayerObject.getMoney() >= 1350)
-        {
-            for (Part part : tradeCenter.getPartsTC())
-            {
-                if (part.getTotemType() == maxType)
-                {
+        if (neutralCount > 0 && max == 2 && nextPlayerObject.getMoney() >= 1350) {
+            for (Part part : tradeCenter.getPartsTC()) {
+                if (part.getTotemType() == maxType) {
                     list.add("buy-" + part.getId());
                 }
             }
-            for (Part part : tradeCenter.getPartsTC())
-            {
-                if (part.getTotemType() == TotemType.NEUTRAL && countOfNeutral == 1)
-                {
+            for (Part part : tradeCenter.getPartsTC()) {
+                if (part.getTotemType() == TotemType.NEUTRAL && countOfNeutral == 1) {
                     countOfNeutral--;
                     list.add("buy-" + part.getId());
                 }
             }
+            list.add("sellTotem");
         }
-        list.add("sellTotem");
+        if (!list.isEmpty()) {
+            return list;
+        }
+        if (this.nextPlayerObject.getHealth() <= 75) {
+            if (this.nextPlayerObject.getMoney() >= 400) {
+                list.add("buy-potion");
+                list.add("usePotion");
+                return list;
+            }
+        }
         return list;
     }
 
@@ -352,7 +356,7 @@ public class Game {
         String res = "-1";
         Queue<Pair> q = new LinkedList<>();
         int korI = nextPlayerObject.getY(), korJ = nextPlayerObject.getX();
-        if (nextPlayerObject.isTrappedInQuickSand()) {
+        if (nextPlayerObject.isTrappedInQuickSand() || nextPlayerObject.isParalysed()) {
             return "-8";
         }
         if (korI > 9 && korI < 15 && korJ > 9 && korJ < 15 && nextPlayerObject.getParts().size() == 3) {
