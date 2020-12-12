@@ -5,6 +5,9 @@ import java.util.*;
 // -2 -2 dig
 // -3 -3 collect
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class Game {
     private int id;
     private Map map;
@@ -71,6 +74,68 @@ public class Game {
             Game game = gson.fromJson(response, Game.class);
             updateGame(game);
         }
+        List<String> list = checkIfBuyingMakesTotem();
+        while (!list.isEmpty())
+        {
+            for (String str : list)
+            {
+                response = MyHttp.sendAction(Constants.PLAYER_ID, Constants.GAME_ID, str);
+                Game game = gson.fromJson(response, Game.class);
+                updateGame(game);
+            }
+            list = checkIfBuyingMakesTotem();
+        }
+    }
+
+    private List<String> checkIfBuyingMakesTotem()
+    {
+        HashMap<TotemType, Integer> hashMap = new HashMap<>();
+        for (TotemType tt : TotemType.values())
+        {
+            hashMap.put(tt, 0);
+        }
+        for (Part part : tradeCenter.getPartsTC())
+        {
+            hashMap.put(part.getTotemType(), hashMap.get(part.getTotemType()) + 1);
+        }
+        int max = 0;
+        TotemType maxType = null;
+        int neutralCount = 0;
+        for (TotemType tt : TotemType.values())
+        {
+            if (tt == TotemType.NEUTRAL)
+            {
+                neutralCount++;
+                continue;
+            }
+            if (hashMap.get(tt) > max)
+            {
+                max = hashMap.get(tt);
+                maxType = tt;
+            }
+        }
+        List<String> list = new ArrayList<>();
+        int countOfNeutral = 1;
+        if (neutralCount > 0 && max == 2 && nextPlayerObject.getMoney() >= 1350)
+        {
+            for (Part part : tradeCenter.getPartsTC())
+            {
+                if (part.getTotemType() == maxType)
+                {
+                    list.add("buy-" + part.getId());
+                }
+            }
+            for (Part part : tradeCenter.getPartsTC())
+            {
+                if (part.getTotemType() == TotemType.NEUTRAL && countOfNeutral == 1)
+                {
+                    countOfNeutral--;
+                    list.add("buy-" + part.getId());
+                }
+            }
+        }
+        list.add("sellTotem");
+        return list;
     }
 
     private List<String> sellActions() {
@@ -483,7 +548,6 @@ public class Game {
                     System.out.print("o ");
                 }
             }
-            System.out.println();
         }
         System.out.println();
     }
